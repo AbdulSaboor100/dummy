@@ -1,0 +1,10 @@
+@import '../index.scss';
+
+.main_container{
+    @include media("desktop"){
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+}

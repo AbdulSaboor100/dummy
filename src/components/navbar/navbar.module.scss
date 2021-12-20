@@ -1,0 +1,73 @@
+@import '../../index.scss';
+
+.main_navbar{
+    @include media("desktop"){
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        background-color: #121211;
+        color: white;
+        padding: 1rem 0;
+
+        .navbar{
+            @include media("desktop"){
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 0 3rem;
+
+                .div1{
+                    @include media("desktop"){
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            @include media("desktop"){
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .div2{
+                    @include media("desktop"){
+                        width: auto;
+                        height: auto;
+                        ul{
+                            @include media("desktop"){
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                list-style: none;
+
+                                li{
+                                    @include media("desktop"){
+                                        width: auto;
+                                        height: auto;
+                                        padding: 0 2rem;
+                                        font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
